@@ -1,0 +1,91 @@
+body {
+    background: linear-gradient(to top, #d8e3e6, #ffffff); /* Degradê de azul claro para azul escuro */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do formulário */
+.formulario {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo branco com opacidade */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Título do formulário */
+.formulario h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos labels */
+.formulario label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+/* Estilo dos inputs */
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Efeito ao focar nos campos */
+.formulario input:focus {
+    border-color: #ffffff;
+    outline: none;
+}
+
+/* Estilo do botão de entrar */
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.formulario button:hover {
+    background-color: #ffffff;
+}
+
+/* Ajustes para telas pequenas (responsivo) */
+@media (max-width: 600px) {
+    .formulario {
+        padding: 20px;
+    }
+
+    .formulario h2 {
+        font-size: 20px;
+    }
+
+    .formulario input[type="text"],
+    .formulario input[type="email"],
+    .formulario input[type="password"],
+    .formulario button {
+        font-size: 16px;
+    }
+}
